@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      document.documentElement.className += " js";
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="media/logo.png" />
+    <title>TechGadgets</title>
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <div class="logo">
+        <img src="media/logo.png" alt="">
+       
+      </div>
+      
+      <div class="menu" id="menu">
+        <div class="menu-links">
+          <a href="index.html">Início</a>
+          <a href="produtos.html">Produtos</a>
+          <a href="#">Contato</a>
+          
+          
+          <form action="/search" method="get" class="search-bar">
+            <input type="search" name="q" placeholder="Pesquisar..." aria-label="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+
+        </div>
+
+    
+
+        <div class="cart-links">
+          <a href="#" id=""><i class="fa-solid fa-user"></i></a>
+          <a href="#cart" id="cart-toggle"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+
+
+      </div>
+
+      <div class="menu-btn" id="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  
+    
+
+
+
+
+    
+      
+      <div class="content">
+        <div class="banner">
+          <img src="media/banner.jpg" alt="">
+        </div>
+        <div class="description">
+        
+          <h1>Tecnologia de ponta, preços imbatíveis.</h1>
+          <h6>Encontre os melhores produtos tecnológicos com os preços mais competitivos do mercado. 
+            Oferecemos uma ampla variedade de dispositivos, gadgets e acessórios de alta qualidade. 
+            Explore nossa seleção e aproveite ofertas exclusivas que você não encontrará em nenhum outro lugar.</h6>
+  
+            <div class="btn-conferir"> 
+              <p>Todos os produtos com <span>15% de desconto.</span></p>
+              <button><a href="produtos.html">Conferir produtos <i class="fa-solid fa-arrow-right"></i></a></button>
+            </div>
+            
+            
+        </div>
+
+        
+      </div>
+
+
+      <div class="content2">
+        <div class="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="media/1.jpg" alt="Image 1">
+              </div>
+              <div class="carousel-item">
+                  <img src="media/2.jpg" alt="Image 2">
+              </div>
+              <div class="carousel-item">
+                  <img src="media/3.jpg" alt="Image 3">
+              </div>
+          </div>
+          <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+          <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+      </div>
+      </div>
+
+
+      <div class="category">
+
+          <div class="item-category">
+              <img src="media/videogame.png" alt="">
+              <h1>Videogame (1)</h1>
+          </div>
+
+          <div class="item-category">
+            <img src="media/eletronico.png" alt="">
+            <h1>Eletrônico (4)</h1>
+        </div>
+
+        <div class="item-category">
+          <img src="media/computador.png" alt="">
+          <h1>Computador (1)</h1>
+      </div>
+
+      <div class="item-category">
+        <img src="media/celular.png" alt="">
+        <h1>Celular (3)</h1>
+    </div>
+
+      </div>
+      
+     
+
+      
+   
+
+  
+
+
+
+  <div id="cart" class="cart">
+      <div class="cart-header">
+          <h2>Carrinho</h2>
+          <button id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="cart-content">
+          <div class="cart-item">
+            <img src="media/iphone15.png" alt="">
+            <p>1x</p> 
+            <p>Iphone 15</p> 
+            <p>R$6.629,90</p> 
+            <button id="remove-item"><i class="fa-solid fa-trash"></i></button>
+          </div>
+
+          <div class="cart-item">
+            <img src="media/notebookdell.png" alt="">
+            <p>1x</p> 
+            <p>Notebook Dell</p> 
+            <p>R$5.269,90</p> 
+            <button id="remove-item"><i class="fa-solid fa-trash"></i></button>
+          </div>
+
+          <div class="cart-item">
+            <img src="media/fechadura.png" alt="">
+            <p>1x</p> 
+            <p>Fechadura Intelbrass</p> 
+            <p>R$339,90</p> 
+            <button id="remove-item"><i class="fa-solid fa-trash"></i></button>
+          </div>
+
+
+          <p>Total a pagar: <span>R$ 12.239,70</span></p>
+      </div>
+      
+      <div class="cart-footer">
+      
+        <button id="checkout"><a href="">Prosseguir para o Pagamento</a></button>
+    </div>
+  </div>
+
+
+
+
+
+
+    <footer class="footer">
+      <p>All rights reserved | &copy; 2024 TechGadgets</p>
+      <ul>
+        <li>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+      <span>Developed by<span><a href="https://gcampolina.github.io/Portfolio/" target="_blank"> Gabriel Campolina</a></span></span>
+      
+    </footer>
+
+
+
+
+
+
+<!--SCRIPT PARA BOTÃO HAMBURGUER MENU-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuBtn = document.getElementById('menu-btn');
+          const menu = document.getElementById('menu');
+  
+          if (menuBtn && menu) {
+            menuBtn.addEventListener('click', function() {
+              menu.classList.toggle('menu-open');
+            });
+          } else {
+            console.error('Menu button or menu not found.');
+          }
+        });
+      </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
